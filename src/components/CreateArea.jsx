@@ -20,7 +20,7 @@ const CreateArea = (props) => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    props.onAdd(noteValue);
+    props?.onAdd(noteValue);
     setNoteValue({
       title: "",
       content: "",
