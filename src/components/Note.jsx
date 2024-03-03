@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 const Note = (props) => {
@@ -14,6 +15,13 @@ const Note = (props) => {
       </button>
     </div>
   );
+};
+
+Note.propTypes = {
+  onDelete: PropTypes.func.isRequired,
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 };
 
 export default Note;

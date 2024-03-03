@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 import AddIcon from "@mui/icons-material/Add";
 import Fab from "@mui/material/Fab";
 import Zoom from "@mui/material/Zoom";
@@ -58,6 +59,10 @@ const CreateArea = (props) => {
       </form>
     </div>
   );
+};
+
+CreateArea.propTypes = {
+  onAdd: PropTypes.func.isRequired,
 };
 
 export default CreateArea;
