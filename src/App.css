@@ -10,8 +10,12 @@ html {
 
 body {
   background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/gray-floral.png");
   padding: 0 16px;
+  width: 100vw;
+  overflow-x: hidden;
 }
+
 
 header {
   background-color: #f5ba13;
@@ -31,11 +35,22 @@ footer {
   text-align: center;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
+  /* height: 2.5rem; */
+}
+
+footer h3 {
+  margin-bottom: 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
 }
 
 footer p {
   color: #ccc;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
 }
 
 .note {
@@ -95,7 +110,7 @@ form textarea {
   resize: none;
 }
 
-form button {
+form .button {
   position: absolute;
   right: 18px;
   bottom: -18px;
